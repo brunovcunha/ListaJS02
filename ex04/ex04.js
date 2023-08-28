@@ -1,7 +1,11 @@
-nome = prompt("Informe primeiro nome: ");
-sobrenome = prompt("Informe seu sobrenome: ");
+nome = prompt("Informe seu nome completo: ");
 
-upper = nome.toUpperCase();
-lower = sobrenome.toLowerCase();
+nome = nome.toLowerCase();
 
-alert(`Seu nome em letras maiúsculas e sobrenome em letras minúsculas: ${upper} ${lower} `);
+nome = nome.split(" ");
+
+nome[0] = nome[0].toUpperCase();
+
+nomeCompleto = nome.join(" ");
+
+alert(`Seu nome em letras maiúsculas e sobrenome em letras minúsculas: ${nomeCompleto}`);
